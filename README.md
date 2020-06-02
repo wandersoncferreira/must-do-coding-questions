@@ -2,6 +2,8 @@
 
 Most commonly asked and must do practice problems for you!
 
+The list of problems were taken from [here](https://www.geeksforgeeks.org/must-do-coding-questions-for-companies-like-amazon-microsoft-adobe/#arrays)
+
 
 ## Usage
 
