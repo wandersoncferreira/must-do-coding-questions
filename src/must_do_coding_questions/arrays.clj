@@ -36,3 +36,18 @@
                                              acc)))
                            {:total 0 :beg-index 0 :end-index nil}
                            (vec uns))))))))
+
+(defn compute-triplet [arr]
+  "The performace may not be too good when dealing with T close to 100 elements."
+  (let [ret (->> (for [a1 arr a2 arr a3 arr
+                       :when (and (= a3 (+ a1 a2)) (not= a1 a2))]
+                   (list a1 a2 a3))
+                 (map sort)
+                 distinct
+                 count)]
+    (if (= ret 0) -1 ret)))
+
+(defn count-triplets [m]
+  (map (comp compute-triplet :array) (:tests m)))
+
+
