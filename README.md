@@ -9,6 +9,13 @@ The list of problems were taken from [here](https://www.geeksforgeeks.org/must-d
 
 Test driven development solutions to the coding problems. Therefore, check the test namespaces.
 
+## Completed
+
+### Arrays
+
+- [ x ] Subarray with given sum
+- [ x ] Count the Triplets
+
 
 ## License
 
