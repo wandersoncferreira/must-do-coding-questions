@@ -51,3 +51,12 @@
   (map (comp compute-triplet :array) (:tests m)))
 
 
+(defn get-max-sum-of-subarray [m]
+  (for [test (:tests m)]
+    (let [arr (:array test)]
+      (->> (for [i (range 1 (+ 1 (count arr)))]
+             (map (partial apply +) (partition i 1 arr)))
+           flatten
+           (apply max)))))
+
+

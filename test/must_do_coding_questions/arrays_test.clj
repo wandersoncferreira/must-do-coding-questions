@@ -22,3 +22,10 @@ The task is to count all the triplets such that sum of two elements equals the t
                                    :tests [{:size 4 :array [1 5 3 2]}
                                            {:size 3 :array [3 2 7]}]})]
       (is (= [2 -1] ret)))))
+
+(deftest kadane-algorithm
+  (testing "Given an array of N integers. Find the contiguous sub-array with max sum."
+    (let [ret (sut/get-max-sum-of-subarray {:number-of-tests 2
+                                            :tests [{:size 5 :array [1 2 3 -2 5]}
+                                                    {:size 4 :array [-1 -2 -3 -4]}]})]
+      (is (= [9 -1] ret)))))
