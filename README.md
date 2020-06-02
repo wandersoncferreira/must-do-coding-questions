@@ -15,6 +15,7 @@ Test driven development solutions to the coding problems. Therefore, check the t
 
 - [x] Subarray with given sum
 - [x] Count the Triplets
+- [x] Kadane's Algorithm
 
 
 ## License
