@@ -13,8 +13,8 @@ Test driven development solutions to the coding problems. Therefore, check the t
 
 ### Arrays
 
-- [ x ] Subarray with given sum
-- [ x ] Count the Triplets
+- [x] Subarray with given sum
+- [x] Count the Triplets
 
 
 ## License
